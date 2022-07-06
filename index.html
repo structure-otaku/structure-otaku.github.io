@@ -17,12 +17,14 @@
     
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-      <a-marker type='pattern' url='model/pattern-download_qr.patt'>
-        <a-entity position='0 0.5 0' rotation="0 0 0" scale="0.001 0.001 0.001" obj-model="obj: url(model//test.obj)" >
+      <a-marker type='pattern' url='model/pattern-QRCODE.patt'>
+        <a-entity position='0 0 0' rotation="-90 0 0" scale="0.001 0.001 0.001" obj-model="obj: url(model/Untitled.obj); mtl:url(model/Untitled.mtl)" >
         </a-entity>
       </a-marker>
+      <a-light type="ambient" color="#ffffff"></a-light>
+      <a-light type="point" intensity="1" position="0 10000 10000"></a-light>
     </a-scene>
 
-    <!-- Developer codes-->
+    <!-- Developer codes  -->
   </body>
 </html>
